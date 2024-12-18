@@ -2,7 +2,7 @@ import { useState, useEffect, useContext } from "react";
 import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 import { POKEMON_API_URL } from "../../folder-variables/Variables";
-import { BodyPage, CardPokemon, CardInfo, MovesList, UlMoves, SkillsList, UlSkills, PicturePokemon, ImgPokemon, TypePokemon, PokemonName, ButtonReturn, ContainerReturnAndPokemon } from "./StylesPokemonDetails";
+import { BodyPage, CardPokemon, CardInfo, MovesList, UlMoves, SkillsList, UlSkills, PicturePokemon, ImgPokemon, TypePokemon, PokemonName, ButtonReturn, ContainerReturnAndPokemon, ContainerType } from "./StylesPokemonDetails";
 import { ThemeContext } from "../../context/ThemeContext";
 
 const PokemonDetails = () => {
@@ -74,13 +74,13 @@ const PokemonDetails = () => {
                         <ImgPokemon src={pokemonDetails.image} alt={pokemonDetails.name} />
                     </PicturePokemon>
 
-                    <div>
+                    <ContainerType>
                         {pokemonDetails.types.map((type, index) => (
                             <TypePokemon key={index} type={type}>
                                 {type}
                             </TypePokemon>
                         ))}
-                    </div>
+                    </ContainerType>
                 </CardPokemon>
             </ContainerReturnAndPokemon>
 

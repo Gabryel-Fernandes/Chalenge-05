@@ -12,10 +12,9 @@ const GlobalStyle = createGlobalStyle`
         align-items: center;
         justify-content: center;
         width: 100%;
-        height: 100%;
         font-family: "Poppins", sans-serif;
-        background: rgb(105,0,0);
-        background: linear-gradient(62deg, rgba(105,0,0,1) 0%, rgba(190,0,0,1) 60%);
+        background: linear-gradient(91deg, rgba(105,0,0,1) 0%, rgba(190,0,0,1) 100%);
+    
     }
 
     ul, li{

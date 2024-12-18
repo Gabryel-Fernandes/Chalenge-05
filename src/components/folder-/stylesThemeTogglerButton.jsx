@@ -4,6 +4,12 @@ const ContainerToggler = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 15px;
+
+  @media(max-width: 720px){
+      flex-direction: column;
+      gap: 30px;
+  }
 `;
 
 const SearchContainer = styled.div`
@@ -47,4 +53,4 @@ const ToggleButton = styled.button`
   }
 `;
 
-export {ToggleButton, SearchInput, SearchContainer, ContainerToggler, LogoPokemons}
+export { ToggleButton, SearchInput, SearchContainer, ContainerToggler, LogoPokemons }
