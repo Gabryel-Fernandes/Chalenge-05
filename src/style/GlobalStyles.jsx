@@ -8,7 +8,6 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body{
-        font-size: 62.5%;
         display: flex;
         align-items: center;
         justify-content: center;
