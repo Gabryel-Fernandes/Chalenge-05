@@ -41,7 +41,7 @@ const PokemonList = ({ searchTerm }) => {
         }
     };
 
-    // Filtra os pokémons pelo nome, se o campo de busca estiver preenchido
+
     const filteredPokemons = searchTerm
         ? pokemons.filter((pokemon) => pokemon.name.toLowerCase().includes(searchTerm.toLowerCase()))
         : pokemons;
@@ -78,7 +78,7 @@ const PokemonList = ({ searchTerm }) => {
 };
 
 PokemonList.propTypes = {
-    searchTerm: PropTypes.string, // searchTerm é uma string
+    searchTerm: PropTypes.string, 
 };
 
 export { PokemonList };

@@ -10,7 +10,7 @@ const Home = ({ searchTerm }) => {
 };
 
 Home.propTypes = {
-    searchTerm: PropTypes.string, // searchTerm é uma string
+    searchTerm: PropTypes.string,
 };
 
 export { Home };

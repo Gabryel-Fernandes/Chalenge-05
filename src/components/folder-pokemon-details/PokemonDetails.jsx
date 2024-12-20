@@ -6,7 +6,7 @@ import { BodyPage, CardPokemon, CardInfo, MovesList, UlMoves, SkillsList, UlSkil
 import { ThemeContext } from "../../context/ThemeContext";
 
 const PokemonDetails = () => {
-    const { id } = useParams(); // Captura o ID da rota
+    const { id } = useParams(); 
     const { theme } = useContext(ThemeContext);
     const [pokemonDetails, setPokemonDetails] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -17,7 +17,7 @@ const PokemonDetails = () => {
                 const response = await axios.get(`${POKEMON_API_URL}/${id}`);
                 const data = response.data;
 
-                // Monta os detalhes necessários
+   
                 const abilitiesWithDescriptions = await Promise.all(
                     data.abilities.map(async (ability) => {
                         const abilityResponse = await axios.get(ability.ability.url);
@@ -32,7 +32,6 @@ const PokemonDetails = () => {
                     })
                 );
 
-                // Monta os detalhes necessários
                 setPokemonDetails({
                     name: data.name,
                     image: data.sprites.front_default,
@@ -48,7 +47,7 @@ const PokemonDetails = () => {
         };
 
         fetchPokemonDetails();
-    }, [id]); // Reexecuta o efeito sempre que 'id' mudar
+    }, [id]); 
 
     if (loading) {
         return <div>Carregando...</div>;

@@ -9,7 +9,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleSearch = (term) => {
-    setSearchTerm(term); // Atualiza o termo de busca
+    setSearchTerm(term); // Atualizando o termo de busca
   };
 
   return (

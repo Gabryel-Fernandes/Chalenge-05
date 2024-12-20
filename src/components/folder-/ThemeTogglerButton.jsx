@@ -1,14 +1,14 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { ToggleButton, ContainerToggler, SearchContainer, SearchInput, LogoPokemons } from "./stylesThemeTogglerButton";
-import { useLocation } from "react-router-dom"; // Importar useLocation
+import { useLocation } from "react-router-dom";
 import PropTypes from "prop-types";
 
 const ThemeToggle = ({ onSearch }) => {
   const { theme, toggleTheme } = useContext(ThemeContext);
-  const location = useLocation(); // Pega a rota atual
+  const location = useLocation(); 
 
-  // Verifica se estamos na página de detalhes
+  
   const isPokemonDetailsPage = location.pathname.includes("pokemon");
 
   return (
@@ -20,7 +20,7 @@ const ThemeToggle = ({ onSearch }) => {
           <SearchInput
             type="text"
             placeholder="Buscar Pokémon"
-            onChange={(e) => onSearch(e.target.value)} // Atualiza a busca
+            onChange={(e) => onSearch(e.target.value)}
             theme={theme}
           />
         </SearchContainer>
@@ -39,7 +39,7 @@ export { ThemeToggle };
 
 
 ThemeToggle.propTypes = {
-  onSearch: PropTypes.func, // Propriedade opcional
+  onSearch: PropTypes.func,
 };
 
 

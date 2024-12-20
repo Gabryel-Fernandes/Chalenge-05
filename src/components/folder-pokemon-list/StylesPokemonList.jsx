@@ -41,7 +41,7 @@ const CardPokemon = styled.div`
 
 const TypePokemon = styled.span`
   background-color: ${(props) => typeColors[props.type] || '#000'};
-  color: white;  // Fonte branca
+  color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
   margin: 5px;
