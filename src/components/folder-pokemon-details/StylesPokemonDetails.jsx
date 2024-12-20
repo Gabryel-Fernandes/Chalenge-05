@@ -120,7 +120,7 @@ const CardInfo = styled.div`
 
     @media(max-width: 720px){
         margin: 40px;
-        width: 100%;
+        width: 78%;
         height: 100%;
     }
 `
@@ -171,6 +171,10 @@ const UlMoves = styled.ul`
     padding: 10px;
     gap: 5px;
     list-style: none;
+
+    @media(max-width: 720px){
+        width: 100%;
+    }
 `;
 
 
