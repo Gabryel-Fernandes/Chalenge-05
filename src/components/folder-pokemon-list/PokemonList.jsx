@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from "react";
 import getPokemons from "../../services/FetchPokemonsData";
-import { ContainerBoard, BordPokemons, CardPokemon, TypePokemon } from "./stylesPokemonList";
+import { ContainerBoard, BordPokemons, CardPokemon, TypePokemon } from "./StylesPokemonList";
 import { LoadMoreButton } from "../folder-load-more/LoadMoreButton";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../../context/ThemeContext";
