@@ -13,7 +13,7 @@ const ThemeToggle = ({ onSearch }) => {
 
   return (
     <ContainerToggler>
-      <LogoPokemon src="./src/assets/icons/Pokemon-Logo.png" alt="logo pokemon" />
+      <LogoPokemon src="./src/assets/icons/logo.png" alt="logo pokemon" />
 
       {!isPokemonDetailsPage && ( 
         <SearchContainer>
