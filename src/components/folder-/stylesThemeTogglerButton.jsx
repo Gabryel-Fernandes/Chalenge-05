@@ -30,7 +30,7 @@ const SearchInput = styled.input`
   font-family: "Poppins", sans-serif;
 `;
 
-const LogoPokemons = styled.img`
+const LogoPokemon = styled.img`
   height: 90px;
 `
 
@@ -53,4 +53,4 @@ const ToggleButton = styled.button`
   }
 `;
 
-export { ToggleButton, SearchInput, SearchContainer, ContainerToggler, LogoPokemons }
+export { ToggleButton, SearchInput, SearchContainer, ContainerToggler, LogoPokemon }

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
-import { ToggleButton, ContainerToggler, SearchContainer, SearchInput, LogoPokemons } from "./stylesThemeTogglerButton";
+import { ToggleButton, ContainerToggler, SearchContainer, SearchInput, LogoPokemon } from "./stylesThemeTogglerButton";
 import { useLocation } from "react-router-dom";
 import PropTypes from "prop-types";
 
@@ -13,9 +13,9 @@ const ThemeToggle = ({ onSearch }) => {
 
   return (
     <ContainerToggler>
-      <LogoPokemons src="src\assets\icons\Pokemon-Logo.png" alt="logo pokemon" />
+      <LogoPokemon src="./src/assets/icons/Pokemon-Logo.png" alt="logo pokemon" />
 
-      {!isPokemonDetailsPage && (
+      {!isPokemonDetailsPage && ( 
         <SearchContainer>
           <SearchInput
             type="text"
