@@ -22,7 +22,7 @@ const BordPokemons = styled.div`
     box-shadow: 2px 3px 0 ${(props) => (props.theme === "dark" ? "#d8d7d7" : "#282828")};
     margin: 20px 30px;
 
-    @media (max-width: 420px) {
+    @media (max-width: 760px) {
         display: flex;
         justify-content: center;
         align-items: center;

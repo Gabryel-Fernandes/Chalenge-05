@@ -9,7 +9,7 @@ const BodyPage = styled.div`
     justify-content: center;
     align-items: center;
 
-    @media(max-width: 420px){
+    @media(max-width: 760px){
       flex-direction: column;
       height: 100%;
   }
@@ -23,7 +23,7 @@ const ContainerReturnAndPokemon = styled.div`
     align-items: center;
     margin: 0px 0px 0px 100px;
 
-    @media(max-width: 420px){
+    @media(max-width: 760px){
         margin: 0px;
     }
 `
@@ -118,7 +118,7 @@ const CardInfo = styled.div`
     background-color: ${(props) => (props.theme === "dark" ? "#d8d7d7" : "#282828")};
     box-shadow: 2px 3px 0 ${(props) => (props.theme === "dark" ? "#d8d7d7" : "#282828")}, 4px 6px 0 #000;
 
-    @media(max-width: 420px){
+    @media(max-width: 760px){
         margin: 40px;
         width: 78%;
         height: 100%;
@@ -172,7 +172,7 @@ const UlMoves = styled.ul`
     gap: 5px;
     list-style: none;
 
-    @media(max-width: 420px){
+    @media(max-width: 760px){
         width: 100%;
     }
 `;

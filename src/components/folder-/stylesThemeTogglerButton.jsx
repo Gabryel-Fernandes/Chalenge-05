@@ -6,7 +6,7 @@ const ContainerToggler = styled.div`
   justify-content: space-around;
   padding: 15px;
 
-  @media(max-width: 420px){
+  @media(max-width: 760px){
       flex-direction: column;
       gap: 30px;
   }
