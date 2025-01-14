@@ -5,7 +5,6 @@ import typeColors from "../../style/TypeColors"
 const ContainerBoard = styled.div`
     max-width: 100vw;
     display: flex;
-    justify-content: center;
     align-items: center;
 `
 const BordPokemons = styled.div`
@@ -22,6 +21,13 @@ const BordPokemons = styled.div`
     transition: background-color 0.3s;
     box-shadow: 2px 3px 0 ${(props) => (props.theme === "dark" ? "#d8d7d7" : "#282828")};
     margin: 20px 30px;
+
+    @media (max-width: 420px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
 `
 
 const CardPokemon = styled.div`
