@@ -32,7 +32,7 @@ const SearchInput = styled.input`
   font-family: "Poppins", sans-serif;
 
   @media(max-width: 760px){
-    font-size: 10px;
+    padding: 10px 10px;
   }
 `;
 
