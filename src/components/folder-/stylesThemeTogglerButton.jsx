@@ -30,6 +30,10 @@ const SearchInput = styled.input`
   box-shadow: 2px 3px 0 ${(props) => (props.theme === "dark" ? "#d8d7d7" : "#282828")}, 4px 6px 0 #000;
   transition: background-color 0.3s;
   font-family: "Poppins", sans-serif;
+
+  @media(max-width: 760px){
+    font-size: 10px;
+  }
 `;
 
 const LogoPokemon = styled.img`
