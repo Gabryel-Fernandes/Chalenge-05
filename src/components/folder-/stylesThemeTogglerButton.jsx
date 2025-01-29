@@ -33,6 +33,7 @@ const SearchInput = styled.input`
 
   @media(max-width: 760px){
     padding: 10px 10px;
+    font-size: 15px;
   }
 `;
 
